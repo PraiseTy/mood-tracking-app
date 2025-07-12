@@ -1,0 +1,56 @@
+.container {
+  background-color: var(--color-white);
+  padding: 20px 25px;
+  border-radius: 10px;
+  color: var(--color-neutral-900);
+  margin-top: 50px;
+  width: 400px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  input {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--color-neutral-300);
+    margin: 10px 0;
+    padding: 10px 5px;
+  }
+}
+
+.tag {
+  color: var(--color-neutral-600);
+  margin-top: 5px;
+}
+
+.button {
+  background-color: var(--color-blue-600);
+  border: 1px solid var(--color-blue-600);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  color: var(--color-white);
+  cursor: pointer;
+  margin: 10px 0;
+  &:hover {
+    background-color: var(--color-blue-700);
+    border-color: var(--color-blue-700);
+  }
+  font-size: var(--text-base);
+}
+
+.anchor {
+  gap: 5px;
+  padding: 0 52px;
+  a {
+    color: var(--color-blue-600);
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-blue-700);
+    }
+  }
+}

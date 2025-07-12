@@ -1,1 +1,2 @@
-export * from './SignupForm'
+export * from './Signup/SignupForm';
+export * from './Modal';

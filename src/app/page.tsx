@@ -1,21 +1,11 @@
-'use client'
-import {Button, FieldError, Form, Input, Label, TextField} from 'react-aria-components'
+'use client';
+import './globals.css';
 
 export default function Home() {
   return (
     <div>
-        <Form>
-            <TextField name="email" type="email" isRequired>
-                <Label>Email</Label>
-                <Input />
-                <FieldError />
-            </TextField>
-            <TextField name="password" type="password" isRequired>
-                <Label>Password</Label>
-                <Input />
-            </TextField>
-            <Button type="submit">Submit</Button>
-        </Form>
+      <h1>Home Page</h1>
+      <p>Return something here later</p>
     </div>
   );
 }

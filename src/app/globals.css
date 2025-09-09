@@ -114,12 +114,14 @@ body {
 
 body {
   color: var(--foreground);
-  background-color: color-mix(
-          in srgb,
-          var(--color-gradient-start) 50%,
-          var(--color-gradient-end) 50%
-  );
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+          to bottom,
+          var(--color-gradient-start) 0%,
+          var(--color-gradient-start) 70%,
+          var(--color-gradient-end)
+  ) no-repeat;
+  min-height: 100vh;
+  font-family: var(--font-reddit-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

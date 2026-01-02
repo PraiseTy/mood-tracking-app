@@ -1,6 +1,6 @@
 'use client';
 import SignupForm from '@/components/Signup/SignupForm/SignupForm';
-import BrandLogo from '@/components/BrandLogo';
+import BrandLogo from '@/components/ui/BrandLogo';
 import styles from './signup.module.scss';
 
 export default function signup() {

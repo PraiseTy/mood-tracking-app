@@ -1,5 +1,5 @@
 import styles from './onboardingPage.module.scss';
-import BrandLogo from '@/components/BrandLogo';
+import BrandLogo from '@/components/ui/BrandLogo';
 import { Heading } from 'react-aria-components';
 export default function OnboardingPage() {
   return (

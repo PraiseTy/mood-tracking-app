@@ -1,6 +1,6 @@
 'use client';
-import { Button, FieldError, Form, Input, Label, TextField, Heading, Text } from 'react-aria-components';
-import styles from './signup.module.scss';
+import { Button, FieldError, Input, Label, TextField, Text } from 'react-aria-components';
+import styles from './signupForm.module.scss';
 import Link from 'next/link';
 import { Dialog } from '@/components';
 
@@ -21,11 +21,11 @@ export default function SignupForm({
   anchorLink
 }: SignupFormProps) {
   return (
-    <Form className={styles.container}>
-      <Heading slot="title">{title}</Heading>
-      <Text slot="description" className={styles.tag}>
+    <form className={styles.container}>
+      <h1 slot="title">{title}</h1>
+      <p slot="description" className={styles.tag}>
         {description}
-      </Text>
+      </p>
       <div>
         <TextField name="email" type="email" className={styles.field} isRequired>
           <Label>
@@ -48,6 +48,6 @@ export default function SignupForm({
       <Text slot="action" className={styles.anchor}>
         {actionText} <Link href={anchorLink}>{anchorText}</Link>
       </Text>
-    </Form>
+    </form>
   );
 }

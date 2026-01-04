@@ -12,7 +12,7 @@ export default function LoginPage() {
         description="Log in to continue tracking your mood"
         buttonText="Log In"
         actionText="Haven't  got an account?"
-        anchorText="Sign up"
+        anchorText="Sign up."
         anchorLink="/signup"
       />
     </main>

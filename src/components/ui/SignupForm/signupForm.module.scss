@@ -97,6 +97,10 @@
   flex-wrap: wrap;
   font-size: var(--text-lg);
   color:  var(--color-neutral-600);
+  background: transparent;
+  border: none;
+  width: 100%;
+
 
   a {
     color: var(--color-blue-600);
@@ -113,4 +117,9 @@
   @media (min-width: 768px) {
     padding: 0 20px;
   }
+}
+
+.container input:focus {
+  outline: none;
+  border: 2px solid  var(--color-blue-600);
 }

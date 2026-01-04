@@ -1,5 +1,5 @@
 'use client';
-import { Button, FieldError, Input, TextField, Text } from 'react-aria-components';
+import { Button, FieldError, Input, TextField } from 'react-aria-components';
 import styles from './signupForm.module.scss';
 import Link from 'next/link';
 import { Dialog } from '@/components';
@@ -45,9 +45,9 @@ export default function SignupForm({
         {buttonText}
       </Button>
 
-      <Text slot="action" className={styles.anchor}>
+      <Button slot="action" className={styles.anchor}>
         {actionText} <Link href={anchorLink}>{anchorText}</Link>
-      </Text>
+      </Button>
     </form>
   );
 }

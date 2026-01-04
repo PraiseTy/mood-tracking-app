@@ -1,5 +1,5 @@
 'use client';
-import { Button, FieldError, Input, Label, TextField, Text } from 'react-aria-components';
+import { Button, FieldError, Input, TextField, Text } from 'react-aria-components';
 import styles from './signupForm.module.scss';
 import Link from 'next/link';
 import { Dialog } from '@/components';
@@ -28,16 +28,16 @@ export default function SignupForm({
       </p>
       <div>
         <TextField name="email" type="email" className={styles.field} isRequired>
-          <Label>
-            Email Address <Dialog />
-          </Label>
-          <Input />
+          <label>
+            Email address <Dialog />
+          </label>
+          <Input placeholder="name@mail.com" />
           <FieldError />
         </TextField>
       </div>
       <div>
         <TextField name="password" type="password" isRequired>
-          <Label>Password</Label>
+          <label>Password</label>
           <Input />
         </TextField>
       </div>

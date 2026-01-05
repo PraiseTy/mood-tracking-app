@@ -2,7 +2,7 @@
 import { Button, FieldError, Input, TextField } from 'react-aria-components';
 import styles from './signupForm.module.scss';
 import Link from 'next/link';
-import { Dialog } from '@/components';
+import { Dialog, PrimaryButton } from '@/components';
 
 interface SignupFormProps {
   title: string;
@@ -41,9 +41,9 @@ export default function SignupForm({
           <Input />
         </TextField>
       </div>
-      <Button type="submit" className={styles.button}>
+      <PrimaryButton type="submit" buttonStyles={styles.button}>
         {buttonText}
-      </Button>
+      </PrimaryButton>
 
       <Button slot="action" className={styles.anchor}>
         {actionText} <Link href={anchorLink}>{anchorText}</Link>
